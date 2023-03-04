@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class UITest 
 {
 
-	@Parameters("Browser")
+	//@Parameters("Browser")
 	//@Test
 	public void startBrowser(String browserName)
 	{
