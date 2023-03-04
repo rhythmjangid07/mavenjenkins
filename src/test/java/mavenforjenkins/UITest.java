@@ -12,8 +12,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class UITest 
 {
 
-	//@Parameters("Browser")
-	@Test
+	@Parameters("Browser")
+	Test
 	public void startBrowser(String browserName)
 	{
 		System.out.println("Parameter value is "+browserName);
