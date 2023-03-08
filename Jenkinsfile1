@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+
+    stages 
+    {
+        stage('Build') 
+        {
+            steps 
+            {
+                echo 'Build the Job'
+            }
+        }
+        stage('Test') 
+        {
+            steps 
+            {
+                echo 'Test the Job'
+            }
+        }
+        stage('Deploy') 
+        {
+            steps 
+            {
+                echo 'Deploy the Job'
+            }
+        }
+    }
+    post
+    {
+        always
+        {
+        
+        emailext body: 'Summary', subject: 'Pipeline Script', to: 'rhythmjangid07@gmail.com'
+        
+            
+        }
+    
+    
+    }
+}
